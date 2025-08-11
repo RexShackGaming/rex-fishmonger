@@ -3,7 +3,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 game 'rdr3'
 
 description 'rex-fishmonger'
-version '2.0.6'
+version '2.0.7'
 
 client_scripts {
     'client/client.lua',
@@ -11,7 +11,8 @@ client_scripts {
 }
 
 server_scripts {
-    'server/server.lua'
+    'server/server.lua',
+    'server/versionchecker.lua'
 }
 
 shared_scripts {
