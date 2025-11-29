@@ -21,10 +21,11 @@ Config = {
 ---------------------------------
 -- settings
 ---------------------------------
-Config.Debug         = false
-Config.KeyBind       = 'J'
-Config.SellTime      = 10000
-Config.EnableTarget  = true
+Config.Debug          = false
+Config.KeyBind        = 'J'
+Config.SellTime       = 10000
+Config.EnableTarget   = true
+Config.RequireNearNPC = true
 
 ---------------------------------
 -- npc settings
@@ -41,25 +42,87 @@ Config.WebhookColour = 'default'
 Config.Lang1 = ' Sold items to the Fishmonger for a total of $'
 
 ---------------------------------
--- fish sell price
+-- SELLABLE FISH (price per fish)
 ---------------------------------
-Config.FishPrice = {
-    Small     = 0.10,
-    Medium    = 0.35,
-    Large     = 0.50,
-    Crayfish  = 0.35,
-    Lobster   = 0.50,
-    Crab      = 0.35,
-    BlueCrab  = 0.50,
+Config.SellableFish = {
+
+    -- Small Fish
+    a_c_fishbluegil_01_sm        = 0.10,
+    a_c_fishbullheadcat_01_sm    = 0.10,
+    a_c_fishchainpickerel_01_sm  = 0.10,
+    a_c_fishperch_01_sm          = 0.10,
+    a_c_fishredfinpickerel_01_sm = 0.10,
+    a_c_fishrockbass_01_sm       = 0.10,
+
+    -- Medium Fish
+    a_c_fishbluegil_01_ms        = 0.35,
+    a_c_fishbullheadcat_01_ms    = 0.35,
+    a_c_fishchainpickerel_01_ms  = 0.35,
+    a_c_fishlargemouthbass_01_ms = 0.35,
+    a_c_fishperch_01_ms          = 0.35,
+    a_c_fishrainbowtrout_01_ms   = 0.35,
+    a_c_fishredfinpickerel_01_ms = 0.35,
+    a_c_fishrockbass_01_ms       = 0.35,
+    a_c_fishsalmonsockeye_01_ml  = 0.35,
+    a_c_fishsalmonsockeye_01_ms  = 0.35,
+    a_c_fishsmallmouthbass_01_ms = 0.35,
+
+    -- Large Fish
+    a_c_fishchannelcatfish_01_lg = 0.50,
+    a_c_fishchannelcatfish_01_xl = 0.50,
+    a_c_fishlakesturgeon_01_lg   = 0.50,
+    a_c_fishlargemouthbass_01_lg = 0.50,
+    a_c_fishlongnosegar_01_lg    = 0.50,
+    a_c_fishmuskie_01_lg         = 0.50,
+    a_c_fishnorthernpike_01_lg   = 0.50,
+    a_c_fishrainbowtrout_01_lg   = 0.50,
+    a_c_fishsalmonsockeye_01_lg  = 0.50,
+    a_c_fishsmallmouthbass_01_lg = 0.50,
+
+    -- pot fishing
+    crayfish  = 0.10,
+    crab      = 0.20,
+    bluecrab  = 0.30,
+    lobster   = 0.50,
+
 }
 
 ---------------------------------
--- fish meat amount
+-- PROCESSABLE FISH → raw_fish amount per fish
 ---------------------------------
-Config.FishAmount = {
-    Small  = 1,
-    Medium = 2,
-    Large  = 3,
+Config.ProcessableFish = {
+    -- Small → 1 raw_fish
+    a_c_fishbluegil_01_sm        = 1,
+    a_c_fishbullheadcat_01_sm    = 1,
+    a_c_fishchainpickerel_01_sm  = 1,
+    a_c_fishperch_01_sm          = 1,
+    a_c_fishredfinpickerel_01_sm = 1,
+    a_c_fishrockbass_01_sm       = 1,
+
+    -- Medium → 2 raw_fish
+    a_c_fishbluegil_01_ms        = 2,
+    a_c_fishbullheadcat_01_ms    = 2,
+    a_c_fishchainpickerel_01_ms  = 2,
+    a_c_fishlargemouthbass_ms    = 2,
+    a_c_fishperch_01_ms          = 2,
+    a_c_fishrainbowtrout_01_ms   = 2,
+    a_c_fishredfinpickerel_01_ms = 2,
+    a_c_fishrockbass_01_ms       = 2,
+    a_c_fishsalmonsockeye_01_ml  = 2,
+    a_c_fishsalmonsockeye_01_ms  = 2,
+    a_c_fishsmallmouthbass_01_ms = 2,
+
+    -- Large → 3 raw_fish
+    a_c_fishchannelcatfish_01_lg = 2,
+    a_c_fishchannelcatfish_01_xl = 2,
+    a_c_fishlakesturgeon_01_lg   = 2,
+    a_c_fishlargemouthbass_01_lg = 2,
+    a_c_fishlongnosegar_01_lg    = 2,
+    a_c_fishmuskie_01_lg         = 2,
+    a_c_fishnorthernpike_01_lg   = 2,
+    a_c_fishrainbowtrout_01_lg   = 2,
+    a_c_fishsalmonsockeye_01_lg  = 2,
+    a_c_fishsmallmouthbass_01_lg = 2,
 }
 
 ---------------------------------

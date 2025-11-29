@@ -19,5 +19,12 @@
     "sv_lang_1" : "No Fish!",
     "sv_lang_2" : "you don't have any fish to sell",
     "sv_lang_3" : "you don't have any fish to process",
-    "sv_lang_4" : "Player Process Fish"
+    "sv_lang_4" : "Player Process Fish",
+    "sv_lang_5" : "Fishmonger",
+    "sv_lang_6" : "Sold fish for $%s",
+    "sv_lang_7" : "Error",
+    "sv_lang_8" : "You must be near a fishmonger!",
+    "sv_lang_9" : "Success",
+    "sv_lang_10" : "Processed fish → %s raw fish & bait",
+    "sv_lang_11" : "Fishmonger Shop"
 }

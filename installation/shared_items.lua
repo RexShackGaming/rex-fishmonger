@@ -7,3 +7,4 @@
     lobster  = { name = 'lobster',  label = 'Lobster',   weight = 100,  type = 'item', image = 'lobster.png',  unique = false, useable = false, shouldClose = true, description = 'add your description' },
     crab     = { name = 'crab',     label = 'Crab',      weight = 100,  type = 'item', image = 'crab.png',     unique = false, useable = false, shouldClose = true, description = 'add your description' },
     bluecrab = { name = 'bluecrab', label = 'Blue Crab', weight = 100,  type = 'item', image = 'bluecrab.png', unique = false, useable = false, shouldClose = true, description = 'add your description' },
+    raw_fish = { name = 'raw_fish', label = 'Raw Fish',  weight = 100,  type = 'item', image = 'raw_fish.png', unique = false, useable = false, shouldClose = true, description = 'add your description' },
